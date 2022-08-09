@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import { useRef, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 import Presentation from '../components/Presentation';
 import Skills from '../components/Skills';
@@ -12,7 +13,6 @@ import {
 	IconBrandLinkedin,
 	IconArrowNarrowUp,
 } from '@tabler/icons';
-import { useInView } from 'react-intersection-observer';
 
 const Home: NextPage = () => {
 	const { ref, inView } = useInView({
@@ -78,7 +78,9 @@ const Home: NextPage = () => {
 								</ul>
 
 								<a
-									href='/'
+									href='/documents/nicolas_plazas_cv.pdf'
+									target='_blank'
+									rel='noreferrer'
 									className='border-coral-red border-2 py-3 text-center'
 								>
 									Resume
@@ -104,7 +106,9 @@ const Home: NextPage = () => {
 							</ul>
 
 							<a
-								href='/'
+								href='/documents/nicolas_plazas_cv.pdf'
+								target='_blank'
+								rel='noreferrer'
 								className='border-coral-red border-2 py-2 px-4 ml-4 rounded text-center'
 							>
 								Resume
