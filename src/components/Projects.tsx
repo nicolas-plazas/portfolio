@@ -4,15 +4,23 @@ import { useTypewriter, useBlink } from '../hooks/useTypewriter';
 
 import projectImg from '../../public/images/veranoPage.jpg';
 import projectImg2 from '../../public/images/timeTracker.jpg';
+import { SectionsRefContext } from '../context/sectionsRefContext';
+import { useContext } from 'react';
 
 const Projects = () => {
+	const sectionsContext = useContext(SectionsRefContext);
+
 	const { ref, inView } = useInView({
 		/* Optional options */
 		threshold: 0,
 	});
 
 	const sectionTitle = 'Projects';
-	const sectionTitleWithTypeWriterEffect = useTypewriter(sectionTitle, 150, inView);
+	const sectionTitleWithTypeWriterEffect = useTypewriter(
+		sectionTitle,
+		150,
+		inView,
+	);
 	const blinkEffect = useBlink({
 		textWithoutEffect: sectionTitle,
 		textWithEffect: sectionTitleWithTypeWriterEffect,
@@ -21,7 +29,10 @@ const Projects = () => {
 	});
 
 	return (
-		<section className='min-h-screen flex flex-col justify-center'>
+		<section
+			ref={sectionsContext?.projects}
+			className='min-h-screen flex flex-col justify-center'
+		>
 			<h2 className='mb-7 text-2xl font-semibold text-cyan-/-aqua'>{`${sectionTitleWithTypeWriterEffect}${
 				blinkEffect ? '|' : ''
 			}`}</h2>
@@ -32,7 +43,7 @@ const Projects = () => {
 						<Image
 							src={projectImg}
 							layout='fill'
-							className='rounded-t-md rounded-t-none md:rounded-l-md object-top'
+							className='rounded-t-md md:rounded-l-md object-top'
 							objectFit='cover'
 						/>
 					</div>
@@ -48,26 +59,30 @@ const Projects = () => {
 						</p>
 
 						<ul className='flex flex-wrap mb-3 text-supernova'>
-							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
-								HTML
-							</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>HTML</li>
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
 								JavaScript
 							</li>
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
 								JavaScript
 							</li>
-							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
-								React
-							</li>
-							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
-								Next JS
-							</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>React</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>Next JS</li>
 						</ul>
 
 						<div className='flex flex-wrap my-10'>
-							<a href='/' className='my-2 mr-3 px-4 py-2 border-2 rounded-2xl text-supernova'>Abrir</a>
-							<a href='/' className='my-2 px-4 py-2 border-2 rounded-2xl text-supernova'>Repositorio</a>
+							<a
+								href='/'
+								className='my-2 mr-3 px-4 py-2 border-2 rounded-2xl text-supernova'
+							>
+								Abrir
+							</a>
+							<a
+								href='/'
+								className='my-2 px-4 py-2 border-2 rounded-2xl text-supernova'
+							>
+								Repositorio
+							</a>
 						</div>
 					</div>
 				</article>
@@ -93,26 +108,30 @@ const Projects = () => {
 						</p>
 
 						<ul className='flex flex-wrap mb-3 text-supernova'>
-							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
-								HTML
-							</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>HTML</li>
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
 								JavaScript
 							</li>
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
 								JavaScript
 							</li>
-							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
-								React
-							</li>
-							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
-								Next JS
-							</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>React</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>Next JS</li>
 						</ul>
 
 						<div className='flex flex-wrap my-10'>
-							<a href='/' className='my-2 mr-3 px-4 py-2 border-2 rounded-2xl text-supernova'>Abrir</a>
-							<a href='/' className='my-2 px-4 py-2 border-2 rounded-2xl text-supernova'>Repositorio</a>
+							<a
+								href='/'
+								className='my-2 mr-3 px-4 py-2 border-2 rounded-2xl text-supernova'
+							>
+								Abrir
+							</a>
+							<a
+								href='/'
+								className='my-2 px-4 py-2 border-2 rounded-2xl text-supernova'
+							>
+								Repositorio
+							</a>
 						</div>
 					</div>
 				</article>

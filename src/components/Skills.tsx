@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { SectionsRefContext } from '../context/sectionsRefContext';
 
 import { useTypewriter, useBlink } from '../hooks/useTypewriter';
 import randomColor from '../utils/randomColor';
@@ -25,13 +26,19 @@ const skillList = [
 ];
 
 const Skills = () => {
+	const sectionsContext = useContext(SectionsRefContext);
+
 	const { ref, inView } = useInView({
 		/* Optional options */
 		threshold: 0,
 	});
 
 	const sectionTitle = 'Skills';
-	const sectionTitleWithTypeWriterEffect = useTypewriter(sectionTitle, 150, inView);
+	const sectionTitleWithTypeWriterEffect = useTypewriter(
+		sectionTitle,
+		150,
+		inView,
+	);
 	const blinkEffect = useBlink({
 		textWithoutEffect: sectionTitle,
 		textWithEffect: sectionTitleWithTypeWriterEffect,
@@ -45,16 +52,14 @@ const Skills = () => {
 	}, [color]);
 
 	return (
-		<section className='min-h-screen flex flex-col justify-center mt-10 snap-center'>
+		<section
+			ref={sectionsContext?.skills}
+			className='min-h-screen flex flex-col justify-center mt-10 snap-center'
+		>
 			<h2
 				ref={ref}
 				className='mb-7 text-2xl font-semibold text-cyan-/-aqua'
 			>{`${sectionTitleWithTypeWriterEffect}${blinkEffect ? '|' : ''}`}</h2>
-			{/* <p className='w-full mt-5 text-base font-normal text-chetwode-blue'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-				dolore ea est deleniti voluptate assumenda iusto velit eos blanditiis
-				nulla aut eaque, iure vel possimus officiis sunt id pariatur nesciunt?
-			</p> */}
 			<ul className='grid gap-5'>
 				{skillList.map((skill, i) => {
 					return (
