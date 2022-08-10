@@ -4,7 +4,7 @@ import Header from './header/Header';
 import Footer from './Footer';
 import ScrollToTopBtn from './ScrollToTopBtn';
 
-import { SectionsRefContext } from '../../context/sectionsRefContext';
+import { SectionsRefContext } from '../../context/SectionsRefContext';
 
 interface LayoutProps {
 	children: React.ReactNode;

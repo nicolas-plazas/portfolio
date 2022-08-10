@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { SectionsRefContext } from '../context/sectionsRefContext';
+import { SectionsRefContext } from '../context/SectionsRefContext';
 
 import { useTypewriter, useBlink } from '../hooks/useTypewriter';
 import randomColor from '../utils/randomColor';

@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { HeaderTypes } from './types/headerTypes';
 
-import { SectionsRefContext } from '../../../context/sectionsRefContext';
+import { SectionsRefContext } from '../../../context/SectionsRefContext';
 import scrollIntoView from '../../../utils/scrollIntoView';
 
 const DesktopHeader = (props: HeaderTypes) => {

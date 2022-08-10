@@ -1,11 +1,12 @@
+import { useContext } from 'react';
 import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
+
+import { SectionsRefContext } from '../context/SectionsRefContext';
 import { useTypewriter, useBlink } from '../hooks/useTypewriter';
 
 import projectImg from '../../public/images/veranoPage.jpg';
 import projectImg2 from '../../public/images/timeTracker.jpg';
-import { SectionsRefContext } from '../context/sectionsRefContext';
-import { useContext } from 'react';
 
 const Projects = () => {
 	const sectionsContext = useContext(SectionsRefContext);

@@ -11,7 +11,7 @@ import Projects from '../components/Projects';
 import {
 	SectionsRefContext,
 	ISectionsRefContext,
-} from '../context/sectionsRefContext';
+} from '../context/SectionsRefContext';
 
 const Home: NextPage = () => {
 	const { ref, inView } = useInView({

@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import { HeaderTypes } from './types/headerTypes';
 
-import { SectionsRefContext } from '../../../context/sectionsRefContext';
+import { SectionsRefContext } from '../../../context/SectionsRefContext';
 import scrollIntoView from '../../../utils/scrollIntoView';
 
 const hamburgerLine = `h-1 w-6 my-1 rounded-full bg-coral-red transition ease transform duration-300`;

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { SectionsRefContext } from '../../context/sectionsRefContext';
+import { SectionsRefContext } from '../../context/SectionsRefContext';
 
 import { IconArrowNarrowUp } from '@tabler/icons';
 
