@@ -26,10 +26,10 @@ const Presentation = ({ sectionRef }: SkillProps) => {
 			className='flex flex-col content-center justify-center min-h-screen pt-36 snap-start'
 		>
 			<h3 className='mb-5 text-base font-normal text-supernova 2xl:text-lg'>
-				<span className='text-white'>Hi,</span> my name is
+				<span className='text-white'>Hola,</span> soy
 			</h3>
 			<h1 className='text-4xl leading-none font-semibold text-coral-red 2xl:text-5xl'>
-				Nicolas Plazas
+				Nicolás Plazas
 			</h1>
 			<h2
 				ref={ref}
@@ -38,17 +38,18 @@ const Presentation = ({ sectionRef }: SkillProps) => {
 				{`${myRoleWithTypeWriterEffect}${blinkEffect ? '|' : ''}`}
 			</h2>
 			<p className='w-full mt-5 text-base font-normal text-chetwode-blue 2xl:text-lg 2xl:w-3/4'>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit
-				dolore ea est deleniti voluptate assumenda iusto velit eos blanditiis
-				nulla aut eaque, iure vel possimus officiis sunt id pariatur nesciunt?
+				Soy un desarrollador de software especializado en JavaScript y
+				TypeScript. Me apasiona el desarrollo web, aprender nuevas tecnologías y
+				crear soluciones robustas, escalables y accesibles centradas en las
+				personas.
 			</p>
 			<a
 				href='/documents/nicolas_plazas_cv.pdf'
 				target='_blank'
 				rel='noreferrer'
-				className='w-24 py-2 px-4 mt-12 text-center text-sm font-normal text-tree-poppy border-2 border-tree-poppy rounded-2xl 2xl:text-base'
+				className='w-32 py-2 px-4 mt-12 text-center text-sm font-normal text-tree-poppy border-2 border-tree-poppy rounded-2xl 2xl:text-base'
 			>
-				Resume
+				Resumen
 			</a>
 		</section>
 	);

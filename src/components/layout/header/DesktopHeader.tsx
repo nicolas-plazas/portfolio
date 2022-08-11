@@ -13,22 +13,26 @@ const DesktopHeader = (props: HeaderTypes) => {
 			<ul className='flex justify-between items-center text-sm'>
 				<li className='mx-2'>
 					<button onClick={scrollIntoView(sectionsContext?.skills)}>
-						Skills
+						{/* Skills */}
+						Habilidades
 					</button>
 				</li>
 				<li className='mx-2'>
 					<button onClick={scrollIntoView(sectionsContext?.experience)}>
-						Experience
+						{/* Experience */}
+						Experiencia
 					</button>
 				</li>
 				<li className='mx-2'>
 					<button onClick={scrollIntoView(sectionsContext?.projects)}>
-						Projects
+						{/* Projects */}
+						Proyectos
 					</button>
 				</li>
 				<li className='mx-2'>
 					<button onClick={scrollIntoView(sectionsContext?.contact)}>
-						Contact
+						{/* Contact */}
+						Contacto
 					</button>
 				</li>
 			</ul>
@@ -39,7 +43,8 @@ const DesktopHeader = (props: HeaderTypes) => {
 				rel='noreferrer'
 				className='border-coral-red border-2 py-2 px-4 ml-4 rounded text-center'
 			>
-				Resume
+				{/* Resume */}
+				Resumen
 			</a>
 		</div>
 	);

@@ -41,22 +41,26 @@ const MobileDesktop = (props: HeaderTypes) => {
 					<ul className='text-xl font-medium'>
 						<li className='mb-5'>
 							<button onClick={scrollIntoView(sectionsContext?.skills)}>
-								Skills
+								{/* Skills */}
+								Habilidades
 							</button>
 						</li>
 						<li className='mb-5'>
 							<button onClick={scrollIntoView(sectionsContext?.experience)}>
-								Experience
+								{/* Experience */}
+								Experiencia
 							</button>
 						</li>
 						<li className='mb-5'>
 							<button onClick={scrollIntoView(sectionsContext?.projects)}>
-								Projects
+								{/* Projects */}
+								Proyectos
 							</button>
 						</li>
 						<li className='mb-5'>
 							<button onClick={scrollIntoView(sectionsContext?.contact)}>
-								Contact
+								{/* Contact */}
+								Contacto
 							</button>
 						</li>
 					</ul>
@@ -67,7 +71,8 @@ const MobileDesktop = (props: HeaderTypes) => {
 						rel='noreferrer'
 						className='border-coral-red border-2 py-3 text-center'
 					>
-						Resume
+						{/* Resume */}
+						Resumen
 					</a>
 				</nav>
 			</aside>

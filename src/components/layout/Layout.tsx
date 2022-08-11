@@ -15,7 +15,7 @@ const Layout = (props: LayoutProps) => {
 	const sectionsContext = useContext(SectionsRefContext);
 
 	return (
-		<div className='overflow-y-auto snap-proximity md:snap-y max-h-screen'>
+		<div className='overflow-y-scroll snap-proximity md:snap-y max-h-screen'>
 			<div ref={sectionsContext?.divToScrollTop} />
 			<Header />
 			<main className='px-6 md:px-12 lg:px-44 2xl:px-96'>{props.children}</main>

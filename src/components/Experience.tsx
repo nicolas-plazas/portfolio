@@ -11,7 +11,7 @@ const Experience = () => {
 		threshold: 0,
 	});
 
-	const sectionTitle = 'Experience';
+	const sectionTitle = 'Experiencia';
 	const sectionTitleWithTypeWriterEffect = useTypewriter(
 		sectionTitle,
 		150,
@@ -46,31 +46,21 @@ const Experience = () => {
 				<p className='mb-6 text-sm text-coral-red-200'>Oct 2018 - Jun 2022</p>
 
 				<ul className='grid grid-cols-1 gap-6 text-base font-normal text-chetwode-blue'>
-					<li className=''>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-						quaerat id distinctio vel quod odit corporis odio nisi minima
-						perferendis modi saepe quo illum quasi, earum eum, commodi at ut.
+					<li>
+						Escribir código moderno, robusto, escalable, accesible, e
+						interactivo con un excelente "performance" para diversos clientes
+						externos e internos.
 					</li>
 					<li>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-						quaerat id distinctio vel quod odit corporis odio nisi minima
-						perferendis modi saepe quo illum quasi, earum eum, commodi at ut.
+						Trabajar con diversas tecnologías y lenguajes de programación tales
+						como JavaScript, TypeScript, Next JS, React JS, Node JS, PostgreSQL,
+						etc.
 					</li>
 					<li>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-						quaerat id distinctio vel quod odit corporis odio nisi minima
-						perferendis modi saepe quo illum quasi, earum eum, commodi at ut.
+						Liderar y dar seguimiento a un equipo de desarrollo de tres
+						personas.
 					</li>
-					<li>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-						quaerat id distinctio vel quod odit corporis odio nisi minima
-						perferendis modi saepe quo illum quasi, earum eum, commodi at ut.
-					</li>
-					<li>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-						quaerat id distinctio vel quod odit corporis odio nisi minima
-						perferendis modi saepe quo illum quasi, earum eum, commodi at ut.
-					</li>
+					<li>Seleccionar el "stack" tecnológico para cada proyecto.</li>
 				</ul>
 			</div>
 

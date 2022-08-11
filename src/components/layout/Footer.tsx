@@ -13,7 +13,8 @@ const Footer = () => {
 		>
 			<div className='flex flex-col items-center md:flex-row'>
 				<p className='text-xs text-center mb-4 text-supernova-50 md:text-left md:text-sm md:mb-0'>
-					Design & Developed by <b>Nicolas Plazas</b>
+					{/* Design & Developed by <b>Nicolas Plazas</b> */}
+					Diseñado y Desarrollado por <b>Nicolás Plazas</b>
 				</p>
 				<ul className='flex justify-around w-full md:justify-end'>
 					<li>

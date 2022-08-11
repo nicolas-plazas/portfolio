@@ -33,7 +33,7 @@ const Skills = () => {
 		threshold: 0,
 	});
 
-	const sectionTitle = 'Skills';
+	const sectionTitle = 'Habilidades';
 	const sectionTitleWithTypeWriterEffect = useTypewriter(
 		sectionTitle,
 		150,

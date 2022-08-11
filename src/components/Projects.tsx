@@ -16,7 +16,7 @@ const Projects = () => {
 		threshold: 0,
 	});
 
-	const sectionTitle = 'Projects';
+	const sectionTitle = 'Proyectos';
 	const sectionTitleWithTypeWriterEffect = useTypewriter(
 		sectionTitle,
 		150,
@@ -50,13 +50,10 @@ const Projects = () => {
 					</div>
 					<div className='p-6 rounded-b-md bg-[#242632]'>
 						<h3 className='mb-5 text-2xl text-supernova'>
-							<a href='/'>Nombre del proyecto</a>
+							Página corporativa Verano Ingeniería
 						</h3>
 						<p className='mb-4 text-chetwode-blue'>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-							fugiat illum ab soluta tenetur delectus ipsum porro odio ipsam
-							assumenda. Dolorum repellendus corporis cumque esse rerum ullam
-							voluptates veniam quod?
+							Página corporativa para la empresa Verano Ingeniería.
 						</p>
 
 						<ul className='flex flex-wrap mb-3 text-supernova'>
@@ -64,26 +61,26 @@ const Projects = () => {
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
 								JavaScript
 							</li>
-							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
-								JavaScript
-							</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>CSS</li>
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>React</li>
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>Next JS</li>
 						</ul>
 
 						<div className='flex flex-wrap my-10'>
 							<a
-								href='/'
+								href='https://verano.com.co/'
+								target='_blank'
+								rel='noreferrer'
 								className='my-2 mr-3 px-4 py-2 border-2 rounded-2xl text-supernova'
 							>
 								Abrir
 							</a>
-							<a
+							{/* <a
 								href='/'
 								className='my-2 px-4 py-2 border-2 rounded-2xl text-supernova'
 							>
 								Repositorio
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</article>
@@ -99,40 +96,45 @@ const Projects = () => {
 					</div>
 					<div className='p-6 rounded-b-md bg-[#242632]'>
 						<h3 className='mb-5 text-2xl text-supernova'>
-							<a href='/'>Nombre del proyecto</a>
+							Verano Time Tracker
 						</h3>
 						<p className='mb-4 text-chetwode-blue'>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-							fugiat illum ab soluta tenetur delectus ipsum porro odio ipsam
-							assumenda. Dolorum repellendus corporis cumque esse rerum ullam
-							voluptates veniam quod?
+							Aplicación de uso interno creada en Verano Ingeniería para la
+							gestión de tiempo por tarea o proyecto, con funcionalidades de
+							geo-localización.
 						</p>
 
 						<ul className='flex flex-wrap mb-3 text-supernova'>
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>HTML</li>
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
-								JavaScript
+								TypeScript
 							</li>
-							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
-								JavaScript
-							</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>CSS</li>
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>React</li>
 							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>Next JS</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>GraphQL</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>Nest JS</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>Node JS</li>
+							<li className='py-1 px-3 border-2 rounded-2xl w-fit'>
+								PostgreSQL
+							</li>
 						</ul>
 
 						<div className='flex flex-wrap my-10'>
 							<a
-								href='/'
+								href='https://timetracker.veranocloud.com.co/'
+								target='_blank'
+								rel='noreferrer'
 								className='my-2 mr-3 px-4 py-2 border-2 rounded-2xl text-supernova'
 							>
 								Abrir
 							</a>
-							<a
+							{/* <a
 								href='/'
 								className='my-2 px-4 py-2 border-2 rounded-2xl text-supernova'
 							>
 								Repositorio
-							</a>
+							</a> */}
 						</div>
 					</div>
 				</article>
